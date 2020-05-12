@@ -126,4 +126,15 @@ getInput.oninput = () => {
 }
  */
 
+/************* Работа с text-area
+const getTextArea: any = document.querySelector('#areaOne');
+const getInput: any = document.querySelector('#areaInput');
+const getBtn: any = document.querySelector('.areaBtn');
+const getText: any = document.querySelector('.areaText');
 
+getBtn.onclick = () => {
+    let getInputValue: string = getInput.value;
+    getText.innerHTML = getInputValue;
+    getTextArea.value = getInputValue;
+}
+ */
