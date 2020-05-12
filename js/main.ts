@@ -138,3 +138,13 @@ getBtn.onclick = () => {
     getTextArea.value = getInputValue;
 }
  */
+
+/************ Работа с select(value)
+const getSelect: any = document.querySelector('#selectOne');
+const getText: any = document.querySelector('.selectText');
+
+
+getSelect.onchange = () => {
+    getText.innerHTML = getSelect.options[getSelect.selectedIndex].value;
+};
+ */
