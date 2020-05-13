@@ -148,3 +148,57 @@ getSelect.onchange = () => {
     getText.innerHTML = getSelect.options[getSelect.selectedIndex].value;
 };
  */
+
+/****************** Работа с циклом For(по клику записывать 50 значений в div)
+const getBtn: any = document.querySelector('.forBtn');
+const getText: any = document.querySelector('.forText')
+
+getBtn.onclick = () => {
+    for (let i: number = 1; i < 51; i++ ) {
+        getText.innerHTML += i + '   ';
+
+    }
+}
+ */
+
+/****************** Работа с циклом For(по клику записывать 122 значений в div(итерация 2))
+const getBtn: any = document.querySelector('.forBtn');
+const getText: any = document.querySelector('.forText')
+
+getBtn.onclick = () => {
+    for (let i: number = 2; i < 124; i = i + 2 ) {
+        getText.innerHTML += i + '   ';
+
+    }
+}
+ */
+
+/***************** Работа с циклом For(от 25 до 7 c шагом 1.)
+const getBtn: any = document.querySelector('.forBtn');
+const getText: any = document.querySelector('.forText');
+
+getBtn.onclick = () => {
+    for(let steps: number = 25; steps > 0; steps--) {
+        console.log(steps);
+        getText.innerHTML +=steps + '   ';
+        if (steps == 7) break;
+    }
+}
+ */
+
+/***************** Работа с циклом For(для инпута)
+
+const getInput:any = document.querySelector('#forInput');
+const getBtn:any = document.querySelector('.forBtn');
+const getText: any = document.querySelector('.forText');
+
+getBtn.onclick = () => {
+    let getValue: any = getInput.value;
+    let text: string = '';
+    for (getValue; getValue > -1; getValue--) {
+        text += getValue + "  ";
+    }
+    getText.innerHTML = text;
+    console.log(getValue);
+}
+ */
